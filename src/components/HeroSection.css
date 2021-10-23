@@ -1,77 +1,98 @@
-video{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-    top: 0px;
+.hero-container {
+  width: 130%;
+  max-width: 130%;
+  height: 90vh;
+  background: url(images/hero-mitad.jpg) top center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  /* background: linear-gradient(
+    to right,
+    rgba(67, 154, 212, 0.672),
+    rgba(32, 133, 184, 6)
+  ); */
+  z-index: 9;
+  border-radius: 0 0 50% 50%;
+  transform: translateX(-50%) rotate(0deg);
+  
 }
 
-.hero-container{
-    /* background-image: url('images/img-home.jpg') center center/cover no-repeat; */
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0.0.0.0,2);
-    object-fit: contain; 
+.hero-container .hero-img img{
+  width: 50%;
+  margin-top: -4rem;
+} 
+
+.hero-container .texto-principal {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-top: -4rem;
+}
+.hero-container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+}
+.hero-container video::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 130%;
+  height: 95%;
+  z-index: 0;
+  border-radius: 0 0 50% 50%;
+  transform: translateX(-50%) rotate(0deg);
+}
+.btn-outline-primary {
+  color: #ffffff!important;
+  border-color: #ffffff!important;
+  border: none!important;
+}
+.btn-outline-primary:hover{
+  color: #ffffff!important;
+  border-color: #ffffff!important;
+  border: none!important;
+  /* transform: rotate(100deg); */
+  background: none!important;
+  margin: 0;
 }
 
-.hero-container > h1{
-    color: white;
-    font-size: 100px;
-    margin-top: -100px;
-
+.hero-btns {
+  margin-top: 32px;
 }
 
-.hero-container > p{
-    margin-top: 8px;
-    color: white;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.hero-btns{
-    margin-top: 32px;
-}
-
-.hero-btns .btn{
-    margin: 6px;
-}
-
-.fa-play-circle{
-    margin-left: 4px;
+.hero-btns .btn {
+  margin: 6px;
 }
 
 @media screen and (max-width: 960px) {
-    .hero-container > h1{
-        font-size: 70px;
-        margin-top: -150px;
-    
-    }
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
 }
-
 
 @media screen and (max-width: 768px) {
-    .hero-container > h1{
-        font-size: 50px;
-        margin-top: -100px;
-    }
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
 
-    .hero-container > p{
-        font-size: 30px;
-    }
+  .hero-container > p {
+    font-size: 30px;
+  }
 
-    .btn-mobile{
-        display: block;
-        text-decoration: none;
-    }
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
 
-    .btn{
-        width: 100%;
-    }
+  .btn {
+    width: 100%;
+  }
 }
-

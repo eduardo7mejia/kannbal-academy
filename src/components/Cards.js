@@ -46,7 +46,7 @@ const cardUno = [
   },
   {
     id: 2,
-    src: "images/img-9.jpg",
+    src: "images/img-1.jpg",
     text: "Explora nuevas formas para desenvolverte en tu ambiente laboral",
     label: "Ciencia",
     path: "/services",
