@@ -30,6 +30,7 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    padding-bottom: 2rem;
   }
   
   .cards__item__link {
@@ -93,9 +94,18 @@
     padding: 20px 30px 30px;
     background: transparent !important;
   }
-  
   .cards__item__text {
-    color: #252e48;
+    position: relative;
+    width: 100%;
+    padding-top: 30%;
+    bottom: 5rem;
+    overflow: hidden;
+    color: #ffffff;
+  }
+  
+  .cards__item__text::after {
+    position: absolute;
+    color: #ffffff;
     font-size: 18px;
     line-height: 24px;
   }

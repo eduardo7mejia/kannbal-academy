@@ -41,7 +41,7 @@ const ContenedorModal = styled.div`
   border-radius: 5px;
   box-shadow: rgba(100, 100, 110, 0.2) 0px 7px 29px 0px;
   padding: ${props => props.padding ? props.padding : '20px'};
-  top: -4rem;
+  left: -11.5%;
 `;
 const BotonCerrar = styled.button`
   position: absolute;
@@ -55,6 +55,7 @@ const BotonCerrar = styled.button`
   transition: 0.3s ease all;
   border-radius: 50px;
   color: #1766dc;
+  z-index: 5;
 
   &:hover {
     color: #df2424;

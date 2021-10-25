@@ -4,35 +4,37 @@ import "./Cards.css";
 
 function Cards() {
   return (
-    <div className="cards">
-      <h1>Lineas de carrera</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
-            {cardUno.map(({id,src,text,label,path}) => (
-              <CardItem
-                key={id}
-                src={src}
-                text={text}
-                label={label}
-                path={path}
-              />
-            ))}
-          </ul>
-          <ul className="cards__items">
-            {cardDos.map(({id,src,text,label,path}) => (
-              <CardItem
-                key={id}
-                src={src}
-                text={text}
-                label={label}
-                path={path}
-              />
-            ))}
-          </ul>
+    <section>
+      <div className="cards">
+        <h1>Lineas de carrera</h1>
+        <div className="cards__container">
+          <div className="cards__wrapper">
+            <ul className="cards__items">
+              {cardUno.map(({ id, src, text, label, path }) => (
+                <CardItem
+                  key={id}
+                  src={src}
+                  text={text}
+                  label={label}
+                  path={path}
+                />
+              ))}
+            </ul>
+            <ul className="cards__items">
+              {cardDos.map(({ id, src, text, label, path }) => (
+                <CardItem
+                  key={id}
+                  src={src}
+                  text={text}
+                  label={label}
+                  path={path}
+                />
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

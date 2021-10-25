@@ -12,10 +12,10 @@ function HeroSection() {
       {/* <img src="images/hero-mitad.jpg" alt="" /> */}
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 hero-img">
+          <div className="col-lg-4 col-md-6 col-sm-12 hero-img">
             <img src="images/logo.png" className="img-fluid" alt="" />
           </div>
-          <div className="col-lg-8 d-flex flex-column justify-content-center">
+          <div className="col-lg-8 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
             <h1 className="texto-principal">
               Aprende de los mejores profesionales y llega más rápido a donde
               quieres
@@ -30,7 +30,7 @@ function HeroSection() {
                   type="button"
                   className="btn btn-outline-primary"
                 >
-                  <i className="far fa-play-circle fa-4x fa-spin"></i>
+                  <i className="far fa-play-circle fa-4x"></i>
                 </button>
                 <Modal
                   estado={estadoModalVideo}
@@ -39,10 +39,10 @@ function HeroSection() {
                   padding={"0px"}
                 >
                   <Contenido>
-                    <div className="embed-responsive embed-responsive-1by1">
+                    <div class="ratio ratio-1x1">
                       <iframe
-                        class="embed-responsive-item"
                         src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                        title="YouTube video"
                         allowfullscreen
                       ></iframe>
                     </div>

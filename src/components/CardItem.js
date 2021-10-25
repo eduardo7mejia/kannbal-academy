@@ -8,10 +8,10 @@ function CardItem({ path, label, src, text }) {
         <Link className="cards__item__link" to={path}>
           <figure className="cards__item__pic-wrap" data-category={label}>
             <img src={src} alt="" className="cards__item__img" />
+            <div className="cards__item__info">
+              <h5 className="cards__item__text">{text}</h5>
+            </div>
           </figure>
-          <div className="cards__item__info">
-            <h5 className="cards__item__text">{text}</h5>
-          </div>
         </Link>
       </li>
     </>

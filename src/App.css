@@ -45,3 +45,6 @@
     color: #fff;
     font-size: 100px;
   }
+  figure {
+    margin: 0 0 0rem !important;
+  }
