@@ -19,6 +19,41 @@
     font-size: 3rem;
   }
   
+/* colores */
+
+.color-white {
+  color: #ffffff;
+}
+
+.blue-bg {
+  background-color: #1997d6;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.color-orange {
+  color: #e7bd2b;
+}
+
+.color-blue {
+  color: #1997d6;
+}
+
+.color-gray {
+  color: #424242;
+}
+
+.light-blue-color {
+  color: #1db4f0;
+}
+
+.high-blue-color {
+  color: #005295;
+}
+
+  
   .careers {
     background-image: url('components/images/img-2.jpg');
     background-position: center;
