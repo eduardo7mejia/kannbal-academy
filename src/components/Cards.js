@@ -9,7 +9,7 @@ function Cards() {
   const [estadoModalVideo, cambiarEstadoModalVideo] = useState(false);
   return (
     <section>
-      <div className="container">
+      <Contenedor className="container">
         <div className="row">
           <h2 className="color-blue">Lineas de </h2>
           <h1 className="color-blue">Carrera</h1>
@@ -23,7 +23,7 @@ function Cards() {
             />
           ))}
         </div>
-      </div>
+      </Contenedor>
     </section>
   );
 }
@@ -74,13 +74,6 @@ const cardUno = [
 ];
 
 export default Cards;
-const Contenido = styled.div`
-  align-items: center;
-
-  iframe {
-    width: 100%;
-    height: 500px;
-    vertical-align: top;
-    border-radius: 3px;
-  }
+const Contenedor = styled.div`
+  padding: 3rem;
 `;

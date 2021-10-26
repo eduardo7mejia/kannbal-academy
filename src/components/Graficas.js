@@ -1,11 +1,11 @@
 import React from "react";
 import GraficaCircular from "./GraficaCircular";
-
+import styled from "styled-components";
 const Graficas = () => {
   return (
     <>
       <section className="section" id="graficas">
-        <div className="container">
+        <Contenedor className="container">
           <div className="row">
             <h2 className="color-blue">¿Por qué es difícil conseguir</h2>
             <h1 className="color-blue">un puesto en una organización?</h1>
@@ -18,7 +18,7 @@ const Graficas = () => {
               />
             ))}
           </div>
-        </div>
+        </Contenedor>
       </section>
     </>
   );
@@ -53,3 +53,6 @@ const grafica = [
     label: " de los candidatos carecen de habilidades profesionales",
   },
 ];
+const Contenedor = styled.div`
+  padding: 3rem;
+`;
