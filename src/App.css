@@ -7,7 +7,9 @@
   body{
     overflow-x: hidden;
   }
-  
+  section{
+    padding: 3em;
+  }
   .home,
   .careers,
   .sign-in,
@@ -26,7 +28,7 @@
 }
 
 .blue-bg {
-  background-color: #1997d6;
+  background-color: #1E3163;
 }
 
 .transparent-bg {
@@ -38,7 +40,7 @@
 }
 
 .color-blue {
-  color: #1997d6;
+  color: #1E3163;
 }
 
 .color-gray {
@@ -78,7 +80,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    font-size: 100px;
+    font-size: 80px;
   }
   figure {
     margin: 0 0 0rem !important;

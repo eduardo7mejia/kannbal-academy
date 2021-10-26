@@ -1,4 +1,4 @@
-.cards {
+/* .cards {
     padding: 4rem;
     background: #fff;
   }
@@ -126,4 +126,83 @@
     .cards__item {
       margin-bottom: 2rem;
     }
-  }
+  } */
+.profile-card-2 {
+  max-width: 350px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.25s;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.profile-card-2:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.profile-card-2 img {
+  transition: all linear 0.25s;
+  width: 400px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-card-2 .profile-name {
+  position: absolute;
+  left: 0px;
+  bottom: 100px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all linear 0.25s;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+
+.profile-card-2 .profile-icons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: all linear 0.25s;
+  background: rgb(221, 8, 83);
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+.profile-card-2 .profile-icons .fa {
+  margin: 5px;
+}
+
+.profile-card-2:hover img {
+  filter: grayscale(0.2);
+}
+
+.profile-card-2:hover .profile-name {
+  bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+  bottom: 30px;
+}
+
+.profile-card-2:hover .profile-icons {
+  right: 40px;
+}

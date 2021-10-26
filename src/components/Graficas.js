@@ -1,16 +1,15 @@
 import React from "react";
 import GraficaCircular from "./GraficaCircular";
-import styled from "styled-components";
 
 const Graficas = () => {
   return (
     <>
-      <section class="section" id="graficas">
+      <section className="section" id="graficas">
         <div className="container">
-          <h2>¿Por qué es difícil conseguir</h2>
-          <h1>un puesto en una organización?</h1>
-          <Contenedor className="d-flex justify-content-between">
-            {grafica.map(({ id, dataporcentaje, porcentaje, label }) => (
+          <div className="row">
+            <h2 className="color-blue">¿Por qué es difícil conseguir</h2>
+            <h1 className="color-blue">un puesto en una organización?</h1>
+            {grafica.map(({ id, porcentaje, label, dataporcentaje }) => (
               <GraficaCircular
                 key={id}
                 dataporcentaje={dataporcentaje}
@@ -18,7 +17,7 @@ const Graficas = () => {
                 label={label}
               />
             ))}
-          </Contenedor>
+          </div>
         </div>
       </section>
     </>
@@ -54,10 +53,3 @@ const grafica = [
     label: " de los candidatos carecen de habilidades profesionales",
   },
 ];
-
-const Contenedor = styled.div`
-  display: inline-block;
-  margin: auto;
-  text-align: center;
-  align-items: center;
-`;

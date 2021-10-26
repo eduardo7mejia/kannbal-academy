@@ -39,7 +39,7 @@ function HeroSection() {
                   padding={"0px"}
                 >
                   <Contenido>
-                    <div class="ratio ratio-1x1">
+                    <div className="ratio ratio-1x1">
                       <iframe
                         src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
                         title="YouTube video"

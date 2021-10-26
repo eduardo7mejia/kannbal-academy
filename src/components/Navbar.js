@@ -11,7 +11,7 @@ const opcionesMenu = [
   {
     id: 2,
     to: "/careers",
-    text: "Oferta educativa",
+    text: "Línea de carrera",
   },
   {
     id: 3,

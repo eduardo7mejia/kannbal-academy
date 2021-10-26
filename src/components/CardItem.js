@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function CardItem({ path, label, src, text }) {
+function CardItem({ path, label, src, text, id }) {
   return (
     <>
-      <li className="cards__item">
-        <Link className="cards__item__link" to={path}>
-          <figure className="cards__item__pic-wrap" data-category={label}>
-            <img src={src} alt="" className="cards__item__img" />
-            <div className="cards__item__info">
-              <h5 className="cards__item__text">{text}</h5>
-            </div>
-          </figure>
-        </Link>
-      </li>
+      <div className="col-sm-12 col-lg-4 col-md-6 pt-2">
+        <div className="profile-card-2">
+          <img src={src} key={id} className="img img-responsive img-fluid" />
+          <div className="profile-name">{text}</div>
+          <div class="profile-username ">
+            {label}
+          </div>
+        </div>
+      </div>
     </>
   );
 }

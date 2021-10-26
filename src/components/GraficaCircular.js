@@ -1,32 +1,27 @@
 import React from "react";
-import styled from "styled-components";
 import "./Graficas.css";
-const GraficaCircular = ({ id, dataporcentaje, porcentaje, label }) => {
+const GraficaCircular = ({ id, porcentaje, label , dataporcentaje}) => {
   return (
     <>
-      <div class="row align-items-center">
-        <div className="col-lg-12 col-md-3">
-          <div className="progress" data-percentage={dataporcentaje} key={id}>
-            <span className="progress-left">
-              <span className="progress-bar wow"></span>
-            </span>
-            <span className="progress-right">
-              <span className="progress-bar wow"></span>
-            </span>
-            <div className="progress-value">
-              <div className="color-blue">{porcentaje}</div>
-            </div>
+      <div className="col-md-3 col-sm-6 m-0 py-4">
+        <div class="progress" key={id} data-percentage={dataporcentaje}>
+          <span class="progress-left">
+            <span class="progress-bar wow"></span>
+          </span>
+          <span class="progress-right">
+            <span class="progress-bar wow"></span>
+          </span>
+          <div class="progress-value">
+            <p class="color-blue">{porcentaje}</p>
           </div>
-          <h5 className="text-center color-blue progress-texto">
-            <span class="color-blue">{porcentaje}</span>
-            {label}
-          </h5>
         </div>
+        <h5 className="text-center color-blue progress-texto py-2">
+          <span className="color-blue">{porcentaje}</span>
+          {label}
+        </h5>
       </div>
     </>
   );
 };
 
 export default GraficaCircular;
-
-const Contenedor = styled.div``;
