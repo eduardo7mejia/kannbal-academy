@@ -1,5 +1,5 @@
 import React from "react";
-import "./Graficas.css";
+import "./styles/Graficas.css";
 const GraficaCircular = ({ id, porcentaje, label , dataporcentaje}) => {
   return (
     <>

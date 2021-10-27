@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const Modal = ({ children, estado, cambiarEstado, mostrarOverlay, padding}) => {
+const Modal = ({ children, estado, cambiarEstado, mostrarOverlay, padding, width}) => {
   return (
     <>
       {estado && (
         <Overlay mostrarOverlay={mostrarOverlay}>
-          <ContenedorModal padding={padding}>
+          <ContenedorModal padding={padding} width={width}>
             <BotonCerrar onClick={()=> cambiarEstado(false)}>
               <i className="fas fa-times"></i>
             </BotonCerrar>
@@ -33,7 +33,7 @@ const Overlay = styled.div`
   justify-content: center;
 `;
 const ContenedorModal = styled.div`
-  width: 700px;
+  width: ${props => props.width ? props.width : '700px'};
   height: 500px;
   min-height: 100px;
   background: #ffffff;

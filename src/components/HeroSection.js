@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import "../App.css";
-import "./HeroSection.css";
+import "./styles/HeroSection.css";
 import Modal from "./Modal";
+import logo from "./images/logo.png";
 
 function HeroSection() {
   const [estadoModalVideo, cambiarEstadoModalVideo] = useState(false);
 
   return (
     <section id="hero" className="hero-container d-flex align-items-center">
-      {/* <img src="images/hero-mitad.jpg" alt="" /> */}
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12 hero-img">
-            <img src="images/logo.png" className="img-fluid" alt="" />
+            <img src={logo} className="img-fluid" alt="" />
           </div>
           <div className="col-lg-8 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
             <h1 className="texto-principal">
@@ -22,9 +22,6 @@ function HeroSection() {
             </h1>
             <div>
               <div className="text-center text-white">
-                {/* <button className="btn btn-outline-secondary">
-                <i className="far fa-play-circle fa-3x"></i>
-                </button> */}
                 <button
                   onClick={() => cambiarEstadoModalVideo(!estadoModalVideo)}
                   type="button"
@@ -41,7 +38,7 @@ function HeroSection() {
                   <Contenido>
                     <div className="ratio ratio-1x1">
                       <iframe
-                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                        src="https://www.youtube.com/watch?v=9ZXylkJ_UW4&list=RD9ZXylkJ_UW4&start_radio=1"
                         title="YouTube video"
                         allowfullscreen
                       ></iframe>

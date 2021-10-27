@@ -54,7 +54,7 @@ const SignIn = () => {
                   type="email"
                   name="email"
                   className="form-input form-control"
-                  placeholder="Correo"
+                  placeholder="Ingresa tu correo "
                   value={values.email}
                   onChange={handleChange}
                 />
@@ -65,7 +65,7 @@ const SignIn = () => {
                   type="password"
                   name="password"
                   className="form-input form-control"
-                  placeholder="Contraseña"
+                  placeholder="Ingresa tu contraseña"
                   value={values.password}
                   onChange={handleChange}
                 />

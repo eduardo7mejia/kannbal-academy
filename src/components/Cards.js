@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import CardItem from "./CardItem";
-import "./Cards.css";
+import "./styles/Cards.css";
 import Modal from "./Modal";
 import "../App.css";
 
@@ -13,16 +13,33 @@ function Cards() {
         <div className="row">
           <h2 className="color-blue">Lineas de </h2>
           <h1 className="color-blue">Carrera</h1>
-          {cardUno.map(({ id, src, text, label, path }) => (
-            <CardItem
-              key={id}
-              src={src}
-              text={text}
-              label={label}
-              path={path}
-            />
-          ))}
+          <a
+            onClick={() => cambiarEstadoModalVideo(!estadoModalVideo)}
+            type="button"
+            className="row"
+          >
+            {cardUno.map(({ id, src, text, label, path }) => (
+              <CardItem
+                key={id}
+                src={src}
+                text={text}
+                label={label}
+                path={path}
+              />
+            ))}
+          </a>
         </div>
+        <Modal
+          estado={estadoModalVideo}
+          cambiarEstado={cambiarEstadoModalVideo}
+          mostrarOverlay={true}
+          padding={"10px"}
+          width={"350px"}
+        >
+          <Contenido className="row">
+           <h1>Aquí va el contenido de la card</h1>
+          </Contenido>
+        </Modal>
       </Contenedor>
     </section>
   );
@@ -76,4 +93,14 @@ const cardUno = [
 export default Cards;
 const Contenedor = styled.div`
   padding: 3rem;
+`;
+const Contenido = styled.div`
+  align-items: center;
+
+  iframe {
+    width: 100%;
+    height: 500px;
+    vertical-align: top;
+    border-radius: 3px;
+  }
 `;

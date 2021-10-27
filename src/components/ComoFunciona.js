@@ -13,7 +13,7 @@ const ComoFunciona = () => {
             <img
               src={logo}
               alt="loading..."
-              className="img-fluid d-block mx-auto"
+              className="img-fluid d-block mx-auto gisito"
             />
           </div>
         </div>
@@ -25,4 +25,9 @@ const ComoFunciona = () => {
 export default ComoFunciona;
 const Contenedor = styled.div`
   padding: 3rem;
+  img{
+    width: 100%;
+    height: 200%;
+    max-height: 200%;
+  }
 `;

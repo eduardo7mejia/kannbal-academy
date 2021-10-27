@@ -4,7 +4,7 @@ import "../../App.css";
 import useForm from "../useForm";
 import axios from "axios";
 import validate from "../validateSignup";
-import "../Formulario.css";
+import "../styles/Formulario.css";
 const SignUp = () => {
   const registerUser = () => {
     console.log(values.email + " " + values.password + " " + values.password2);
